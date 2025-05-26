@@ -10,8 +10,8 @@ on:
 jobs:
   analyze:
     name: Analyze
-    runs-on: ${{ (matrix.language == 'swift' && fromJSON('[ "self-hosted", "macOS"]')) || 'self-hosted' }}
-    timeout-minutes: ${{ (matrix.language == 'swift' && 120) || 360 }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
     permissions:
       actions: read
       contents: read
