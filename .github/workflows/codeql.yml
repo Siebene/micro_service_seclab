@@ -35,7 +35,7 @@ jobs:
       with:
         category: "/language:${{matrix.language}}"
     - name: Upload CodeQL database as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: database
         path: /home/runner/work/_temp/codeql_databases/
