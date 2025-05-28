@@ -29,6 +29,7 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         packs: siebene/fastjson@1.0.0
+        token: ${{ secrets.S_TOKEN }}
     - name: Autobuild
       uses: github/codeql-action/autobuild@v3
     - name: Perform CodeQL Analysis
