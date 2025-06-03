@@ -28,7 +28,7 @@ jobs:
       uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
-        packs: siebene/fastjson@1.0.0
+        packs: siebene/ikea@1.0.0
         token: ${{ secrets.S_TOKEN }}
     - name: Autobuild
       uses: github/codeql-action/autobuild@v3
